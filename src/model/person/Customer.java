@@ -9,8 +9,8 @@ public  class Customer extends Person{
     private String name;
     private String phone;
     private String address;
-    private ArrayList<Product> cart = new ArrayList<>();
-    private ArrayList<Bill> bills = new ArrayList<>();
+//    private ArrayList<Product> cart = new ArrayList<>();
+//    private ArrayList<Bill> bills = new ArrayList<>();
 
     public Customer() {
     }

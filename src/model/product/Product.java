@@ -15,14 +15,13 @@ public class Product {
     private int count;
     private Cashier cashier;
     private Customer customer;
-    private int rate;
-    private ArrayList<String> comment;
+
 
 
     public Product() {
     }
 
-    public Product(String id, String name, long price, String description, String type, int count, Cashier cashier, Customer customer, int rate, ArrayList<String> comment) {
+    public Product(String id, String name, long price, String description, String type, int count, Cashier cashier, Customer customer) {
         this.id = id;
         this.name = name;
         this.price = price;
@@ -31,8 +30,7 @@ public class Product {
         this.count = count;
         this.cashier = cashier;
         this.customer = customer;
-        this.rate = rate;
-        this.comment = comment;
+
     }
 
     public String getId() {
@@ -99,21 +97,6 @@ public class Product {
         this.customer = customer;
     }
 
-    public int getRate() {
-        return rate;
-    }
-
-    public void setRate(int rate) {
-        this.rate = rate;
-    }
-
-    public ArrayList<String> getComment() {
-        return comment;
-    }
-
-    public void setComment(ArrayList<String> comment) {
-        this.comment = comment;
-    }
 
     @Override
     public String toString() {
@@ -126,8 +109,6 @@ public class Product {
                 ", count=" + count +
                 ", cashier=" + cashier +
                 ", customer=" + customer +
-                ", rate=" + rate +
-                ", comment=" + comment +
                 '}';
     }
 
