@@ -2,6 +2,7 @@ package model;
 
 import model.person.Cashier;
 import model.person.Customer;
+import model.product.Product;
 
 import java.time.LocalDate;
 

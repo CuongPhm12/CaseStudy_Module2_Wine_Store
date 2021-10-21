@@ -1,9 +1,10 @@
-package model;
+package model.product;
 
 import model.person.Cashier;
 import model.person.Customer;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class Product {
     private String id;
@@ -129,4 +130,7 @@ public class Product {
                 ", comment=" + comment +
                 '}';
     }
+
+
 }
+

@@ -1,7 +1,7 @@
 package model.person;
 
 import model.Bill;
-import model.Product;
+import model.product.Product;
 
 import java.util.ArrayList;
 
@@ -9,8 +9,8 @@ public  class Customer extends Person{
     private String name;
     private String phone;
     private String address;
-    ArrayList<Product> cart;
-    ArrayList<Bill> bills;
+    private ArrayList<Product> cart = new ArrayList<>();
+    private ArrayList<Bill> bills = new ArrayList<>();
 
     public Customer() {
     }
