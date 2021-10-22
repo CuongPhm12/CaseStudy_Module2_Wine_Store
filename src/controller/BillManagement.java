@@ -9,7 +9,10 @@ public class BillManagement implements General<Bill> {
     }
 
     @Override
-    public void edit(int index, Bill bill) {
+    public void edit(String id, Bill bill) {
+
+    }
+
 
     }
 

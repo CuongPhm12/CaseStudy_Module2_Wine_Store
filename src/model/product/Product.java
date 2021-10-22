@@ -10,27 +10,28 @@ public class Product {
     private String id;
     private String name;
     private long price;
+    private int quantity;
     private String description;
     private String type;
-    private int count;
-    private Cashier cashier;
-    private Customer customer;
-
-
 
     public Product() {
     }
 
-    public Product(String id, String name, long price, String description, String type, int count, Cashier cashier, Customer customer) {
+    public Product(String id, String name, long price, int quantity, String description, String type) {
         this.id = id;
         this.name = name;
         this.price = price;
+        this.quantity = quantity;
         this.description = description;
         this.type = type;
-        this.count = count;
-        this.cashier = cashier;
-        this.customer = customer;
+    }
 
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
     public String getId() {
@@ -73,42 +74,15 @@ public class Product {
         this.type = type;
     }
 
-    public int getCount() {
-        return count;
-    }
-
-    public void setCount(int count) {
-        this.count = count;
-    }
-
-    public Cashier getCashier() {
-        return cashier;
-    }
-
-    public void setCashier(Cashier cashier) {
-        this.cashier = cashier;
-    }
-
-    public Customer getCustomer() {
-        return customer;
-    }
-
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
-    }
-
-
     @Override
     public String toString() {
         return "Product{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", price=" + price +
+                ", quantity=" + quantity +
                 ", description='" + description + '\'' +
                 ", type='" + type + '\'' +
-                ", count=" + count +
-                ", cashier=" + cashier +
-                ", customer=" + customer +
                 '}';
     }
 

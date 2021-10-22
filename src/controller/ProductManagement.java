@@ -6,6 +6,7 @@ import model.product.ProductSortByPriceIncrease;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class ProductManagement implements General<Product> {
     private ArrayList<Product> products = new ArrayList<>();
@@ -20,17 +21,50 @@ public class ProductManagement implements General<Product> {
 
     @Override
     public void add(Product product) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Nhập mã sản phẩm: ");
+        String id = scanner.nextLine();
+        System.out.print("Nhập tên sản phẩm: ");
+        String name = scanner.nextLine();
+        System.out.print("Nhập giá cho sản phẩm: ");
+        long price = scanner.nextInt();
+        System.out.print("Nhập số lượng cho sản phẩm: ");
+        int quantity = scanner.nextInt();
+        System.out.print("Nhập mô tả cho sản phẩm: ");
+        String description = scanner.nextLine();
+        System.out.println("Nhập loại sản phẩm");
+        String type = scanner.nextLine();
+
         products.add(product);
+
     }
 
     @Override
-    public void edit(int index, Product product) {
-        products.set(index,product);
+    public void edit(String id, Product product) {
+        for (int i = 0; i < products.size(); i++) {
+            if (products.get(i).getId().equals(id)) {
+                products.get(i).setId(product.getId());
+                products.get(i).setName(product.getName());
+                products.get(i).setType(product.getType());
+                products.get(i).setType(product.getType());
+                products.get(i).setPrice(product.getPrice());
+                products.get(i).setQuantity(product.getQuantity());
+                products.get(i).setDescription(product.getDescription());
+
+            }
+        }
     }
 
     @Override
     public void remove(int index) {
         products.remove(index);
+    }
+
+    public void displayAllProducts() {
+        for (Product product : products
+        ) {
+            System.out.println(product);
+        }
     }
 
     @Override
@@ -70,10 +104,16 @@ public class ProductManagement implements General<Product> {
     public void sortPriceIncrease(){
         ProductSortByPriceIncrease priceIncrease = new ProductSortByPriceIncrease();
         products.sort(priceIncrease);
+        System.out.println(" Sắp xếp sản phẩm tăng dần theo giá ");
+        for (Product product : products) {
+            System.out.println(product);
     }
     public void sortPriceDecrease(){
         ProductSortByPriceDecrease priceDecrease = new ProductSortByPriceDecrease();
         products.sort(priceDecrease);
+            System.out.println(" Sắp xếp sản phẩm giảm dần theo giá ");
+            for (Product product : products) {
+                System.out.println(product);
     }
 
 }

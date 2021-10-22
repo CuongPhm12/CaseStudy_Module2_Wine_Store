@@ -6,19 +6,27 @@ import model.product.Product;
 import java.util.ArrayList;
 
 public  class Customer extends Person{
+    private  String id;
     private String name;
     private String phone;
     private String address;
-//    private ArrayList<Product> cart = new ArrayList<>();
-//    private ArrayList<Bill> bills = new ArrayList<>();
 
     public Customer() {
     }
 
-    public Customer(String name, String phone, String address) {
+    public Customer(String id, String name, String phone, String address) {
+        this.id = id;
         this.name = name;
         this.phone = phone;
         this.address = address;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -45,30 +53,14 @@ public  class Customer extends Person{
         this.address = address;
     }
 
-    public ArrayList<Product> getCart() {
-        return cart;
-    }
-
-    public void setCart(ArrayList<Product> cart) {
-        this.cart = cart;
-    }
-
-    public ArrayList<Bill> getBills() {
-        return bills;
-    }
-
-    public void setBills(ArrayList<Bill> bills) {
-        this.bills = bills;
-    }
 
     @Override
     public String toString() {
         return "Customer{" +
-                "name='" + name + '\'' +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
                 ", phone='" + phone + '\'' +
                 ", address='" + address + '\'' +
-                ", cart=" + cart +
-                ", bills=" + bills +
                 '}';
     }
 }
