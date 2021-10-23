@@ -2,7 +2,7 @@ package model;
 
 import model.person.Cashier;
 import model.person.Customer;
-import model.product.Product;
+import model.product.Wine;
 
 import java.time.LocalDate;
 
@@ -10,7 +10,7 @@ public class Bill {
     private String id;
     private Customer customer;
     private Cashier cashier;
-    private Product product;
+    private Wine product;
     private int quantity;
     private long price;
     private LocalDate dateOfBill;
@@ -18,7 +18,7 @@ public class Bill {
     public Bill() {
     }
 
-    public Bill(String id, Customer customer, Cashier cashier, Product product, int quantity, long price, LocalDate dateOfBill) {
+    public Bill(String id, Customer customer, Cashier cashier, Wine product, int quantity, long price, LocalDate dateOfBill) {
         this.id = id;
         this.customer = customer;
         this.cashier = cashier;
@@ -52,11 +52,11 @@ public class Bill {
         this.cashier = cashier;
     }
 
-    public Product getProduct() {
+    public Wine getProduct() {
         return product;
     }
 
-    public void setProduct(Product product) {
+    public void setProduct(Wine product) {
         this.product = product;
     }
 

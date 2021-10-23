@@ -1,91 +1,98 @@
 package model.product;
 
-import model.person.Cashier;
-import model.person.Customer;
-
-import java.util.ArrayList;
-import java.util.Comparator;
+import model.Category;
 
 public class Product {
-    private String id;
-    private String name;
-    private long price;
-    private int quantity;
-    private String description;
-    private String type;
+    private String idProduct;
+    private String nameProduct;
+    private String descriptionProduct;
+    private double priceProduct;
+    private int sold;
+    private int amount;
+    private Category category;
 
     public Product() {
     }
 
-    public Product(String id, String name, long price, int quantity, String description, String type) {
-        this.id = id;
-        this.name = name;
-        this.price = price;
-        this.quantity = quantity;
-        this.description = description;
-        this.type = type;
+    public Product(String idProduct, String nameProduct, String descriptionProduct, double priceProduct, int sold, int amount, Category category) {
+        this.idProduct = idProduct;
+        this.nameProduct = nameProduct;
+        this.descriptionProduct = descriptionProduct;
+        this.priceProduct = priceProduct;
+        this.sold = sold;
+        this.amount = amount;
+        this.category = category;
     }
 
-    public int getQuantity() {
-        return quantity;
+    public String getIdProduct() {
+        return idProduct;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void setIdProduct(String idProduct) {
+        this.idProduct = idProduct;
     }
 
-    public String getId() {
-        return id;
+    public String getNameProduct() {
+        return nameProduct;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setNameProduct(String nameProduct) {
+        this.nameProduct = nameProduct;
     }
 
-    public String getName() {
-        return name;
+    public String getDescriptionProduct() {
+        return descriptionProduct;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setDescriptionProduct(String descriptionProduct) {
+        this.descriptionProduct = descriptionProduct;
     }
 
-    public long getPrice() {
-        return price;
+    public double getPriceProduct() {
+        return priceProduct;
     }
 
-    public void setPrice(long price) {
-        this.price = price;
+    public void setPriceProduct(double priceProduct) {
+        this.priceProduct = priceProduct;
     }
 
-    public String getDescription() {
-        return description;
+    public int getSold() {
+        return sold;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setSold(int sold) {
+        this.sold = sold;
     }
 
-    public String getType() {
-        return type;
+    public int getAmount() {
+        return amount;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 
     @Override
     public String toString() {
         return "Product{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", price=" + price +
-                ", quantity=" + quantity +
-                ", description='" + description + '\'' +
-                ", type='" + type + '\'' +
+                "idProduct='" + idProduct + '\'' +
+                ", nameProduct='" + nameProduct + '\'' +
+                ", descriptionProduct='" + descriptionProduct + '\'' +
+                ", priceProduct=" + priceProduct +
+                ", sold=" + sold +
+                ", amount=" + amount +
+                ", category=" + category +
                 '}';
     }
+    void show(){
 
-
+    }
 }
-

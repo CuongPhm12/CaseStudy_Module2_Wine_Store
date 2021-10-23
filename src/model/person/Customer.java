@@ -1,10 +1,5 @@
 package model.person;
 
-import model.Bill;
-import model.product.Product;
-
-import java.util.ArrayList;
-
 public  class Customer extends Person{
     private  String id;
     private String name;

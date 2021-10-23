@@ -1,10 +1,10 @@
 package controller;
 
-import model.product.Product;
+import model.product.Wine;
 
 import java.util.ArrayList;
 
 public class CartManagement {
-    ArrayList<Product> cartList = new ArrayList<>();
+    ArrayList<Wine> cartList = new ArrayList<>();
 
 }
