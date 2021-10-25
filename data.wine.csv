@@ -1,0 +1,5 @@
+Product{idProduct='rv02', nameProduct='La Tourne', descriptionProduct='Vang Pháp, vang đỏ, nho Syrah', priceProduct=432.0, sold=0, amount=0, category=null}
+Product{idProduct='rv03', nameProduct='Santi Amarone', descriptionProduct='Vang Ý, vang đỏ, nho Corvina', priceProduct=2100.0, sold=0, amount=0, category=null}
+Product{idProduct='rv04', nameProduct='Alteo', descriptionProduct='Vang Ý, vang đỏ,nho Rondinella', priceProduct=3300.0, sold=0, amount=0, category=null}
+Product{idProduct='rv05', nameProduct='Petralluce', descriptionProduct='Vang Ý, vang trắng, nho Verdeca', priceProduct=806.0, sold=0, amount=0, category=null}
+Product{idProduct='rv06', nameProduct='Casa Millaman', descriptionProduct='Vang Chile, vang đỏ, nhiều loại nho', priceProduct=800.0, sold=0, amount=0, category=null}

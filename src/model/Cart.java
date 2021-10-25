@@ -8,6 +8,14 @@ public class Cart {
     public Cart() {
     }
 
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
+    }
+
     public Cart(Product product) {
         this.product = product;
     }

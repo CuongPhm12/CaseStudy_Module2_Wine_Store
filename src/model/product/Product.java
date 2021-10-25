@@ -14,6 +14,13 @@ public class Product {
     public Product() {
     }
 
+    public Product(String idProduct, String nameProduct, String descriptionProduct, double priceProduct) {
+        this.idProduct = idProduct;
+        this.nameProduct = nameProduct;
+        this.descriptionProduct = descriptionProduct;
+        this.priceProduct = priceProduct;
+    }
+
     public Product(String idProduct, String nameProduct, String descriptionProduct, double priceProduct, int sold, int amount, Category category) {
         this.idProduct = idProduct;
         this.nameProduct = nameProduct;

@@ -10,7 +10,7 @@ public class Account {
     private String role;
     private double money;
 
-    private static final String ACCOUNT_REGEX = "^[_a-z0-9]{6,0}";
+    private static final String ACCOUNT_REGEX = "^[_a-z0-9]{6,}";
 
     public boolean validate(String regex){
         Pattern pattern = Pattern.compile(ACCOUNT_REGEX);
